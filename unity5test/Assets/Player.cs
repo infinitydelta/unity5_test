@@ -50,6 +50,7 @@ public class Player : MonoBehaviour {
         rigidbody.velocity = Vector3.ClampMagnitude(rigidbody.velocity, speed);
         if (!moving)
         {
+			//clamps gravity as well
             rigidbody.velocity *= friction;
         }
         print(rigidbody.velocity);
